@@ -23,6 +23,7 @@ export class TodoTaskComponent implements OnInit {
   }
 
   done(task: Task) {
+    task.end = new Date();
     this.tasksService.done(task);
   }
 }
